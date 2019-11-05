@@ -2,10 +2,10 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: canary-demo
-  annotations:
-    ingress.kubernetes.io/proxy-body-size: 100M
-    kubernetes.io/ingress.class: "nginx"
-    ingress.kubernetes.io/app-root: "/"
+  # annotations:
+  #   ingress.kubernetes.io/proxy-body-size: 100M
+  #   kubernetes.io/ingress.class: "nginx"
+  #   ingress.kubernetes.io/app-root: "/"
 spec:
   rules:
   - host: canary.test.mycom.com
