@@ -8,8 +8,7 @@ metadata:
   #   ingress.kubernetes.io/app-root: "/"
 spec:
   rules:
-  - host: canary.test.mycom.com
-    http:
+  - http:
       paths:
       - path: /
         backend:
